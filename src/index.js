@@ -16,6 +16,7 @@ APP.use(EXPRESS.json());
 
 //Routes
 APP.use('/api/users',require('./routes/users.routes'));
+APP.use('/api/resume',require('./routes/resume.routes'));
 
 //Static files
 APP.use(EXPRESS.static(PATH.join(__dirname, 'public')));
